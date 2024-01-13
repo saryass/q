@@ -1,0 +1,207 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/**************************************************************/
+/* Row1 */
+/**************************************************************/
+.row1 {
+    /* border: 2px solid red; */
+    width: 1335px;
+    display: flex;
+    /* To allign his elements (container1 & container2)*/
+    margin-bottom: 100px;
+}
+
+/**************************************************************/
+/* Container1 in Row1 */
+/**************************************************************/
+.container1 {
+    /* border:2px solid purple ; */
+    width: 105px;
+    position: fixed;
+}
+
+ul {
+    /* border: 3px solid rgb(228, 231, 36); */
+    background-color: #f2f2f2;
+    height: 100vh;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+ul a {
+    text-decoration: none;
+    color: #001D;
+}
+
+.box {
+    /* border: 1px solid blue; */
+    text-align: center;
+    /*to horizontally center the content inside .box ;)*/
+}
+
+.icon1 {
+    margin: 0 auto;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* the two commented properties can be also used to center horizontally the magnifying instead of using (margin: 0 auto)*/
+
+}
+
+.fa-magnifying-glass {
+    background-color: rgb(157, 228, 204);
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.box li {
+    /* background-color:white; */
+    margin-top: 2px;
+    /* to make a space between the text & icon*/
+}
+
+.icon {
+    /* background-color: black; */
+    padding: 8px 22px;
+    border-radius: 15px;
+}
+
+.icon:hover {
+    background-color: #e0dedee5;
+}
+
+/**************************************************************/
+/* Container2 in Row1 */
+/**************************************************************/
+.container2 {
+    /* border: 2px solid rgb(40, 207, 34); */
+    /*....................................*/
+    background: url(https://lh3.googleusercontent.com/2OrUzHCRSI-V46Z1qJBh90usG6OkKwCbXN80FbrjkWoQz4VfoJjNAoQHLHPQRZWH7dI_m5I1gi48h6xMJ5pK6kkdXmUnXPe4VqwvEdo4QeWRjLV9Oew=w2400-rj) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*......................*/
+    border-radius: 20px;
+    margin: 8px 0 0 107px;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 .title {
+    /* border: 1px solid black; */
+    /* background-color: pink; */
+    width: 80%;
+    text-align: center;
+    font-size: 3.58em;
+    font-weight: lighter;
+
+}
+
+.container2 .description {
+    /* border: 1px solid red; */
+    /* background-color: orange; */
+    width: 71.5%;
+    font-size: 1.48em;
+    text-align: center;
+}
+
+.get-started-btn {
+    border: 1px solid rgb(52, 112, 224);
+    width: 225px;
+    height: 78px;
+    border-radius: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24 90 215);
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-top: 1em;
+    transition: 0.1s;
+}
+
+.get-started-btn:hover {
+    background-color: rgb(42, 96, 197);
+}
+
+/*3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333*/
+/*3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333*/
+/*3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333*/
+
+@media only screen and (max-width:480px) {
+    .row1 {
+        /* border: 1px solid red; */
+        width: 100%; /*of mobile screen's width*/
+        height: 45vh;  /*of mobile screen's height*/
+        justify-content: center;
+    }
+
+    /**************************************************************/
+    /* Container1 in Row1 */
+    /**************************************************************/
+    .container1 {
+        display: none;
+    }
+
+    ul {
+        display: none;
+    }
+
+    /*****************************************/
+    .container2 {
+        /* border: 2px solid rgb(40, 207, /34); */
+        margin-left:0;
+        margin: top 3px;;
+        height:94%; /* of row1's height*/
+        width: 94%; /*of row1's width*/
+    }
+
+    .container2 .title {
+        /* border: 1px solid black; */
+        font-size: 1.5em;
+        width: fit-content;
+        margin-bottom: 8px;
+        font-weight: lighter;
+    }
+
+    .container2 .description {
+        /* border: 1px solid red; */
+        /* background-color: orange; */
+        width: 90%;
+        font-size: 1.15em;
+        line-height: 1.4;
+
+    }
+
+    .get-started-btn {
+        border: 1px solid rgb(52, 112, 224);
+        width: 195px;
+        height: 70px;
+        border-radius: 35px;
+        font-size: 1.5em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+    }
+
+
+}
